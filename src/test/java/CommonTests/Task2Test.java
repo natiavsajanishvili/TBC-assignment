@@ -1,7 +1,6 @@
 package CommonTests;
 
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -44,16 +43,16 @@ public class Task2Test {
         }
         int listSize = javaScriptBookList.size();
 
-        // Assertions.assertNotEquals(javaScriptBookList.size(),10);
+        //assert (javaScriptBookList.size()!=10);
 
         try {
-            Assertions.assertEquals(listSize,10);
+            assert (listSize==10);
         } catch (AssertionError e) {
             e.printStackTrace();
             System.out.println("Wrong list size, list size is:" + listSize);
         }
 
-        Assertions.assertEquals(javaScriptBookList.get(0),"Learning JavaScript Design Patterns");
+        assert (javaScriptBookList.get(0).equals("Learning JavaScript Design Patterns"));
 
         for (Integer scriptBookIndex : javaScriptBookIndex) {
             $(By.xpath("(//span[@class='mr-2'])[" + scriptBookIndex + "]")).click();
