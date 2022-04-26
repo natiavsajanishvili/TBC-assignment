@@ -36,7 +36,7 @@ public class Task2Test {
 
                     String bookName = $(By.xpath("(//span[@class='mr-2']/a)[" + i + "]")).getText();
                     Integer index = i;
-                    javaScriptBookIndex.add(index);
+                    javaScriptBookIndex.add(i);
                     javaScriptBookList.add(bookName);
                 }
             }
@@ -59,6 +59,6 @@ public class Task2Test {
             back();
             $(By.xpath("(//span[@class='mr-2'])[" + scriptBookIndex + "]")).scrollIntoView(true);
         }
-        System.out.println("task 2 imushava");
+        System.out.println("task2 ma imushava");
     }
 }
