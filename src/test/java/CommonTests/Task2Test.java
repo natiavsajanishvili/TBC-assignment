@@ -59,5 +59,6 @@ public class Task2Test {
             back();
             $(By.xpath("(//span[@class='mr-2'])[" + scriptBookIndex + "]")).scrollIntoView(true);
         }
+        System.out.println("task 2 imushava");
     }
 }

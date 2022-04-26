@@ -51,5 +51,6 @@ public class Task1Test {
             SelenideElement element = $(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div[2]/div["+ i +"]/div[1]/div[4]"));
             element.shouldNotBe(empty);
         }
+        System.out.println("task 1 imushava");
     }
 }
